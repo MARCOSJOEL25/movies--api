@@ -1,38 +1,110 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
   text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  padding: 30px 30px;
+  border-radius: 35px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movies_image{
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Search_container{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 65px;
+}
+
+.Search_container div{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.Search_container input{
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 2px 2px #ddd;
+  padding: 10px 40px;
+}
+
+.Search_container button{
+  border-radius: 50px;
+  border: none;
+  padding: 10px 20px;
+  background-color: #ddd;
+}
+
+.Search_container button:hover{
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/*.Cover_container{
+  position: relative;
+}*/
+
+.Cover{
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  min-height:500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /*background-position: center;*/
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.Cover h1{
+  font-size:5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Cover p {
+  font-size: 1rem;
+  margin: 0 300px;
+} 
+
+.Cover button {
+  background-color: #000;
+  outline:none;
+  border: 1px solid white;
+  color: #fff;
+  padding:10px 20px;
+  border-radius: 20px;
+}
+
+.Cover button:hover {
+  color: #000;
+  background-color: #fff;
+  transition: .5s
+}
+
+
+.container__trailer_youtube{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0px;
 }
